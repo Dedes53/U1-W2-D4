@@ -96,8 +96,17 @@ console.log(reverseString("Ciao belli"));
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
+function upperFirst(string) {
+  let words = string.split(" ");
+  console.log(words);
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+  }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+  return words.join(" ");
+}
+
+console.log(upperFirst("la prima lettera di ogni parola diventa maiuscola"));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
