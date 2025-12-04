@@ -25,8 +25,15 @@ console.log(crazySum(3, 3));
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
+function crazyDiff(a) {
+  if (a > 19) {
+    return Math.abs(a - 19) * 3;
+  } else {
+    return Math.abs(a - 19);
+  }
+}
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log(crazyDiff(21));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
