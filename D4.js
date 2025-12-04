@@ -39,8 +39,14 @@ console.log(crazyDiff(21));
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+function boundary(n) {
+  if ((n > 20 && n <= 100) || n === 400) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(boundary(100));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
