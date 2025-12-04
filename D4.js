@@ -112,8 +112,15 @@ console.log(upperFirst("la prima lettera di ogni parola diventa maiuscola"));
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-function cutString(string) {}
+function cutString(string) {
+  let letters = string.split("");
+  letters.shift(); //rimuove la prima lettera
+  letters.pop(); //rimuove l'ultima lettera
 
+  return (string = letters.join(""));
+}
+
+console.log(cutString("Ciao belli"));
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
