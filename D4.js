@@ -12,6 +12,14 @@ console.log(area(3, 5));
  La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
  la loro somma moltiplicata per tre.
 */
+function crazySum(a, b) {
+  if (a === b) {
+    return (a + b) * 3;
+  } else {
+    return a + b;
+  }
+}
+console.log(crazySum(3, 3));
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
