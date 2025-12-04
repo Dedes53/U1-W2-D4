@@ -98,8 +98,12 @@ console.log(maxShoppingCart(shoppingCart));
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
 */
+function latestShoppingCart(arr) {
+  let index = arr.length - 1;
+  return arr[index];
+}
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log(latestShoppingCart(shoppingCart));
 
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
