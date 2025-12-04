@@ -68,8 +68,17 @@ console.log(epify("è una figata"));
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
+function check3and7(a) {
+  if (a < 0) {
+    return "Il numero deve essere positivo";
+  } else if (a % 3 === 0 || a % 7 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log(check3and7(-1));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
