@@ -83,8 +83,14 @@ console.log(check3and7(-1));
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
+function reverseString(string) {
+  let letters = string.split(""); // diviso la stringa in lettere formando un array
+  let reversed = letters.reverse(); // ribalto l'array
+  let reversedString = reversed.join(""); // creo una nuova stringa dall'; array ribaltato.
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+  return reversedString;
+}
+console.log(reverseString("Ciao belli"));
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
